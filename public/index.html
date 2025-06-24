@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Employee List</h1>
+  <button id="addEmployeeBtn">Add New Employee</button>
+  <table id="employeeTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Mobile</th>
+        <th>Address</th>
+        <th>DOB</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- Employee Form Popup -->
+  <div id="employeeFormPopup" class="popup">
+    <form id="employeeForm">
+      <label>Name: <input type="text" id="name" required></label><br>
+      <label>Mobile: <input type="text" id="mobile" required></label><br>
+      <label>Address: <input type="text" id="address" required></label><br>
+      <label>DOB: <input type="date" id="dob" required></label><br>
+      <button type="submit">Save</button>
+      <button type="button" id="closePopupBtn">Close</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
